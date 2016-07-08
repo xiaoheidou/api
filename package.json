@@ -1,0 +1,21 @@
+{
+  "name": "test-jenny",
+  "version": "1.0.0",
+  "description": "lightAPI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "animate.css": "^3.5.1",
+    "bootstrap-material-design": "^0.5.10",
+    "font-awesome": "github:fortawesome/Font-Awesome",
+    "jquery": "^1.9.1"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
