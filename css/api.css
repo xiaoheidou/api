@@ -1,17 +1,25 @@
+
+body{
+    background: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .navbar, .navbar.navbar-api {
-    background-color: #004253;
-    /*background-color: #000000;*/
-    /*background-color: orange;*/
-    border-bottom: 2px solid #05add8;
+    background-color: #ee8d02;
     color: #FFFFFF;
     margin-bottom: 0;
 }
-
-.form-group.is-focused .form-control {
-    background-image: linear-gradient(#096076, #096076), linear-gradient(#D2D2D2, #D2D2D2);
-    /*background-size: 100% 2px,100% 1px;*/
+.head{
+    width: 25px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
 }
 
+/*搜索效果*/
+.form-group.is-focused .form-control {
+    background-image: linear-gradient(#fba603, #fba603), linear-gradient(#D2D2D2, #D2D2D2);
+}
+/*三角*/
 .arrow {
     top: -11px;
     left: 50%;
@@ -24,27 +32,57 @@
     border-width: 11px;
     margin-left: -11px;
     border-top-width: 0;
-    border-bottom-color: #f6fcfe;
+    border-bottom-color: #ffffff;
 
 }
 
-.navbar-nav>li>.dropdown-menu {
-    background-color: #f6fcfe;
-    margin-top: 2px;
-
-}
+/*下拉菜单样式*/
 .navbar .dropdown-menu li>a:focus, .navbar .dropdown-menu li>a:hover, .navbar.navbar-default .dropdown-menu li>a:focus, .navbar.navbar-default .dropdown-menu li>a:hover{
     background-color: #ebfaff;
     color: #004253;
 }
+
+/*二级菜单*/
+.nav-jenny{
+    color: #333;
+    border-bottom: 2px solid #fcb95a;
+}
+.navbar .navbar-nav>li>a{
+    padding-top:0px;
+    padding-bottom: 0px;
+    line-height: 52px;
+}
+.navbar .navbar-brand{
+    height: 50px;
+    line-height: normal;
+}
+.navbar, .navbar.navbar-default{
+    background-color: #f8f8f8;
+    color: #333333;
+}
+.nav-jenny img{
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+}
+
+/*主内容*/
 .main{
     padding: 20px;
-    margin-top: 62px;
+    padding-left: 0;
+    top: 102px;
+    position: relative;
+}
+.main-one{
+    padding: 15px;
+    top: 52px;
+    position: relative;
 }
 .main .col-md-3.col-sm-6 .aplly-block{
     display: block;
     padding: 20px;
     /*border: 2px dashed #00b3ee;*/
+    margin: 0;
     text-align: center;
     background-color: #FFFFFF;
     cursor: pointer;
@@ -54,7 +92,7 @@
 }
 .main .col-md-3.col-sm-6 .aplly-block .apply-logo{
     text-align: center;
-    color: #438eda;
+    color: #fd8901;
 }
 .main .col-md-3.col-sm-6 .aplly-block .detail{
     word-break: break-all;
@@ -71,17 +109,76 @@
     color: #eaeaea;
 }
 .main .col-md-3.col-sm-6:hover .aplly-block>.last-apply{
-    color: #05add8;
+    color: #fd8901;
 }
 
+/*bootstrap的col-md-*的所有更改*/
+
+.row,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
 
 
 /*api-detail*/
 .main-left{
-    background-color: #f8f8f8;
+    background-color: transparent;
     position: fixed;
-    width: 200px;
+    top: 102px;
+    bottom: 0;
+    overflow: auto;
+    width: 275px;
+
 }
-.main-left>.navbar-static-side>ul>li:first-child{
-    padding:0 20px;
+.content{
+    padding: 0 10px 20px 20px;
 }
+
+.nav>li>ul.nav>li>a{
+    padding-left: 35px;
+}
+.content>.navbar-static-side>.nav {
+    background-color: #ffffff;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .14), 0 3px 1px -5px rgba(0, 0, 0, .2), 0 1px 10px 0 rgba(0, 0, 0, .12);
+    margin-top: 15px;
+}
+.nav>li>a{
+    color: #555;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+    background-color: #F1F1F1;
+    color: #ff5607;
+}
+
+.menu-second{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #fff;
+    z-index: 1;
+
+}
+.menu-title{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #004254;
+    cursor: pointer;
+    box-shadow: 0 2px 30px 0 rgba(0, 0, 0, .14), 0 3px 1px -5px rgba(0, 0, 0, .2), 0 1px 10px 0 rgba(0, 0, 0, .12);
+}
+.menu-title .fa{
+    margin-top: 8px;
+}
+
+/*页面右侧内容*/
+.main-right{
+    margin-left: 285px;
+}
+.title-api{
+    background: #9D9D9D;
+    padding: 7px 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
