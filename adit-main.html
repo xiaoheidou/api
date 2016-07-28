@@ -175,7 +175,7 @@
                     </div>
                     <div id="collapse1" class="panel-collapse collapse in">
                         <div class="panel-body">
-                            用户注册API
+                            <input type="text" class="form-control" placeholder="用户注册API"/>
                         </div>
                     </div>
                 </div>
@@ -191,7 +191,7 @@
                     </div>
                     <div id="collapse2" class="panel-collapse collapse in">
                         <div class="panel-body">
-                            POST
+                            <input type="text" class="form-control" placeholder="POST"/>
                         </div>
                     </div>
                 </div>
@@ -205,7 +205,7 @@
                     </div>
                     <div id="collapse4" class="panel-collapse collapse in">
                         <div class="panel-body">
-                            http://xx.com/api/user/register
+                            <input type="text" class="form-control" placeholder="http://"/>
                         </div>
                     </div>
                 </div>
@@ -259,7 +259,7 @@
                     </div>
                     <div id="collapse6" class="panel-collapse collapse in">
                         <div class="panel-body">
-                                <pre>
+                            <textarea name="" class="form-control" cols="30" rows="10">
 {
   "error_code": 0,
   "data": {
@@ -271,7 +271,9 @@
     "last_login_time": "0"
   }
 }
-                                </pre>
+                            </textarea>
+
+
                         </div>
                     </div>
                 </div>
@@ -324,7 +326,7 @@
                     </div>
                     <div id="collapse8" class="panel-collapse collapse in">
                         <div class="panel-body">
-                            wu
+                            <input type="text" class="form-control" placeholder="备注"/>
                         </div>
                     </div>
                 </div>
@@ -343,24 +345,24 @@
 <script src="node_modules/bootstrap-material-design/dist/js/ripples.min.js"></script>
 <script>
 
-$("[data-toggle='nav-dropdown']").click(function(){
-    var id = $(this).attr("href");
-    $(id).toggle();
-    event.stopPropagation();
-});
+    $("[data-toggle='nav-dropdown']").click(function(){
+        var id = $(this).attr("href");
+        $(id).toggle();
+        event.stopPropagation();
+    });
 
-$('body').click(function(e) {
-    var target = $(e.target);
-    if(!target.is('#apply *')) {
-        if ( $('#apply').is(':visible') ) $('#apply').hide();
-    }
-});
-$('.nav-dropdown>li:gt(4):not(:last-child)').hide();
-$('.nav-dropdown>li:last-child').click(function(){
-    $('.nav-dropdown>li').show();
-    $(this).hide();
-});
-//$('.nav-dropdown').on()
+    $('body').click(function(e) {
+        var target = $(e.target);
+        if(!target.is('#apply *')) {
+            if ( $('#apply').is(':visible') ) $('#apply').hide();
+        }
+    });
+    $('.nav-dropdown>li:gt(4):not(:last-child)').hide();
+    $('.nav-dropdown>li:last-child').click(function(){
+        $('.nav-dropdown>li').show();
+        $(this).hide();
+    });
+    //$('.nav-dropdown').on()
     $.material.init();
 
 

@@ -9,7 +9,7 @@ body{
     margin-bottom: 0;
 }
 .head{
-    width: 25px;
+    width: 30px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -18,6 +18,13 @@ body{
 /*搜索效果*/
 .form-group.is-focused .form-control {
     background-image: linear-gradient(#fba603, #fba603), linear-gradient(#D2D2D2, #D2D2D2);
+}
+.form-group.is-focused label, .form-group.is-focused label.control-label{
+    color:#ee8d02;
+}
+.navbar .navbar-form{
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 /*三角*/
 .arrow {
@@ -60,10 +67,39 @@ body{
     background-color: #f8f8f8;
     color: #333333;
 }
-.nav-jenny img{
-    width: 100px;
-    height: 100px;
-    margin-right: 15px;
+.nav-dropdown img{
+    width: 80px;
+    height: 80px;
+    margin-right: 8px;
+    background-color: #ffffff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #eaeaea;
+}
+.nav-dropdown{
+    position: fixed;
+    bottom: 0;
+    overflow-y: auto;
+    top: 102px;
+    left: 0;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    width: 270px;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    z-index: 1000;
+    display: none;
+
+
 }
 
 /*主内容*/
@@ -146,7 +182,7 @@ body{
     color: #555;
 }
 .nav>li>a:focus, .nav>li>a:hover{
-    background-color: #F1F1F1;
+    background-color: transparent;
     color: #ff5607;
 }
 
@@ -182,3 +218,31 @@ body{
     border-radius: 5px;
 }
 
+
+
+
+
+/*bootstrap下拉菜单*/
+.panel-heading{
+    cursor: pointer;
+}
+
+
+
+/*add-apply页面*/
+.add-data{
+    border-bottom: 1px solid #F1F1F1;
+}
+.btn.btn-fab.btn-fab-mini{
+    line-height: 40px;
+}
+
+
+/*编辑页面adit-main页面*/
+.panel-body>.form-group{
+    padding-bottom: 0px;
+    margin: 0;
+}
+.panel-body>.form-group>.form-control{
+    margin-bottom:0;
+}
